@@ -1,0 +1,16 @@
+.client-container {
+    background-color: rgba(195, 242, 242, 0.597);
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+
+    
+}
+
+.client-container .client {
+    display: flex;
+    flex-direction: column;
+}
