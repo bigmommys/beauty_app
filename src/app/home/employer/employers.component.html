@@ -1,0 +1,54 @@
+<div class="main-title">Employers</div>
+<div>
+  <div class="client-container" >
+    <div class="client">
+      <div class="client-name">
+        First Name 
+      </div>
+      <div class="client-last-name">
+        Last Name 
+      </div>
+      <div class="client-email">
+        Phone
+      </div>
+      <div class="client-name">
+      </div>
+    </div>
+    <ng-container *ngFor="let employer of employers">
+      <div class="client">
+        <div class="client-name">
+         {{ employer.first_name }}
+        </div>
+        <div class="client-last-name">
+           {{ employer.last_name }}
+        </div>
+        <div class="client-email">
+          {{ employer.phone }}
+        </div>
+        <div class="client-name">
+          <button (click)="editClient(employer)">edit</button>
+        </div>
+      </div>
+    </ng-container>
+    <div class="client" [formGroup]="form">
+      <div class="client-name">
+        <input type="text" formControlName="firstName">
+      </div>
+      <div class="client-last-name" >
+        <input type="text" formControlName="lastName">
+      </div>
+      <div class="client-email">
+        <input type="text" formControlName="phone">
+      </div>
+      <div class="client-name">
+        
+      </div>
+    </div>
+    <div class="footer-btn-container">
+      <button [disabled]="isCreateDisabled" (click)="createEmployer()">Create</button>
+      <button (click)="updateEmployer()">Update</button>
+    </div>
+  </div>
+</div>
+
+

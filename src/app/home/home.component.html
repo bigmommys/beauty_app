@@ -1,0 +1,57 @@
+<div class="main-title">
+  Visit our beauty salon
+</div>
+<div class="main-content">  
+  <div class="visit-creation-form">
+    <div class="visit-form" [formGroup]="form">
+      <div class="input-text-field">
+        <label for="clientName">Name</label>
+        <input name="clientName" type="text" formControlName="firstName"/>
+      </div>
+      <div class="input-text-field">
+        <label for="clientLastName">Last Name</label>
+        <input name="clientLastName" type="text" formControlName="lastName"/>
+      </div>
+      <div class="input-text-field">
+        <label for="clientPhone">Phone</label>
+        <input name="clientPhone" type="text" formControlName="phone"/>
+      </div>
+      <div class="input-text-field">
+        <label for="email">Email</label>
+        <input name="email" type="email" formControlName="email"/>
+      </div>
+      <div class="input-text-field">
+        <label for="clientBithday">Birthday</label>
+        <input name="clientBithday" type="date" formControlName="birthday"/>
+      </div>
+      <div class="input-text-field">
+        <label for="visitDate">Visit Date</label>
+        <input name="visitDate" type="date" formControlName="visitDate"/>
+      </div>
+      <div class="input-text-field">
+        <label for="visitDate">Service</label>
+        <mat-form-field>
+          <mat-label>Service</mat-label>
+          <mat-select [(value)]="selectedService">
+            <mat-option *ngFor="let service of services" [value]="service.value">
+              {{ service.viewValue }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="input-text-field">
+        <label for="visitDate">Employer</label>
+        <mat-form-field>
+          <mat-label>Employer</mat-label>
+          <mat-select [(value)]="selectedEmployer">
+            <mat-option *ngFor="let employer of employers" [value]="employer.value">
+              {{ employer.viewValue }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+    <button (click)="createVisit()">Create Visit</button>
+  </div>
+</div>
+  

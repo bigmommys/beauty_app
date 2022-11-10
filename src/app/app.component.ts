@@ -15,11 +15,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    const url = `http://127.0.0.1:5000/clients`; 
-    this.http.get(url).subscribe(value => {
-      this.clients = value;
-      console.log(value);
-    });
+    
   }
 
 }

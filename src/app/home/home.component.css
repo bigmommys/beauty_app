@@ -1,0 +1,42 @@
+.main-title {
+  width: 100%;
+  font-size: 40px;
+  font-family: cursive;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+ 
+.visit-creation-form {
+    width: 50%;
+    height: 400px;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.visit-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-text-field {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.input-text-field label {
+  padding-left: 20px;
+}
+
+.input-text-field input {
+  margin-right: 20px;
+}

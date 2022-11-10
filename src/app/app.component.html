@@ -1,16 +1,15 @@
-<div>Beauty Salon</div>
-<h2>Kvitka</h2>
-
-<div class="client-container" *ngFor="let client of clients">
-    <div class="client">
-        <div>
-            name: {{ client.client_name }}
-        </div>
-        <div>
-            last Name {{ client.client_lastname }}
-        </div>
-        <div>
-            email : {{ client.email }}
-        </div>
+<div class="main-container">
+  <div class="header-container">
+    <div class="left-side-btn">
+      <a [routerLink]="['/home']" routerLinkActive="router-link-active">Home</a>
+      <a [routerLink]="['/visits']" routerLinkActive="router-link-active">Visits</a>
     </div>
+    <a [routerLink]="['/account']" routerLinkActive="router-link-active">Account</a>
+  </div>
+</div>
+
+<div class="main-container">
+  <div class="content-container">
+    <router-outlet></router-outlet>
+  </div>
 </div>

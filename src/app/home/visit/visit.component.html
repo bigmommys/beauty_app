@@ -1,0 +1,28 @@
+<div class="main-title">Visits</div>
+<div>
+  <div class="visit-container">
+    <ng-container *ngFor="let visit of visits">
+      <div class="visit-card">
+        <div class="main-info-block">
+          <div class="client-block">
+            <span>Client Name: {{ visit.client_name }}</span>
+            <span>Client Last Name: {{ visit.client_lastname }}</span>
+            <span>Client Phone: {{ visit.client_phone}}</span>
+          </div>
+          <div class="employer-block">
+            <span>Employer Name: {{ visit.employer_name }}</span>
+            <span>Employer Last Name: {{ visit.employer_lastname }}</span>
+            <span>Employer Phone: {{ visit.employer_phone}}</span>
+          </div>
+        </div>
+        <div class="service-info">
+          <span>Visit date: {{ visit.visit_date | date : 'short' }}</span>
+          <span>Service name: {{ visit.service_name }}</span>
+          <span>Price: {{ visit.price }}</span>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>
+
+
