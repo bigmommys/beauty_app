@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['visit.component.css']
 })
 
+// const vis = [{
+//   client_name: 'tom',
+//   client_lastname: '',
+//   client_phone: 
+// }]
+
 export class VisitComponent implements OnInit {
   public visits: any;
 

@@ -1,6 +1,8 @@
 .main-title {
   width: 100%;
   font-size: 40px;
+  line-height: normal;
+  height: 60px;
   font-family: cursive;
   font-weight: 600;
   text-align: center;
@@ -12,7 +14,30 @@
     height: 400px;
     background-color: bisque;
     display: flex;
+    justify-content: center;
     flex-direction: column;
+}
+
+.create-btn-block {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.create-btn-block button {
+  width: 40%;
+  height: 40px;
+  border: none;
+  border-radius: 18px;
+  outline: none;
+  font-size: 17px;
+  font-weight: 600;
+  background-color: #bd9b5699;
+  cursor: pointer;
+}
+
+.create-btn-block button:hover {
+  background-color: #a1854c99;
 }
 
 .main-content {
